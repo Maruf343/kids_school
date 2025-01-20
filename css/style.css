@@ -1,0 +1,153 @@
+/* shayred style */
+body{
+    font-family: "Quicksand", serif;
+}
+:root{
+    --primary-color: #FEA301;
+    --secondary-color: #01ACFD;
+    --purple-color: #9794F2;
+    --black-color: #111111;
+    --akashi-color: #7EE5EB;
+}
+.d-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.d-none{
+    display: none;
+}
+/* header section start */
+/* header{
+    width: ;
+} */
+/* nav section start */
+.navbar-nav{
+    width: 1160px;
+    margin: 0px auto;
+    align-items: center;
+}
+.navbar{
+    justify-content: space-between;
+    width: 100%;
+}
+.brand h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.brand img{
+    width: 100%;
+}
+ul{
+    justify-content: space-between;
+}
+ul li{
+    list-style: none;
+}
+ul .home{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0px 25px 0px 100px;
+}
+ul .about{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-right: 25px;
+}
+ul .faci{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--akashi-color);
+    margin-right: 25px;
+}
+ul .admi{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--purple-color);
+    margin-right: 25px;
+}
+.navbar button{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    background: var(--primary-color);
+    padding: 0px 40px;
+    border-radius: 10px;
+    border: none;
+}
+.fa-list{
+    font-size: 40px;
+
+}
+/* nav section end */
+/* banner section start */
+.banner{
+    width: 1160px;
+    margin: 0px auto;
+    align-items: center;
+}
+.banner-content{
+}
+.banner-content h3{
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+.banner-content span{
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.banner-content small{
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.banner-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.banner img{
+    width: 100%;
+}
+.banner-content button{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 5px 20px;
+    color: white;
+    background: var(--black-color);
+    border-radius: 10px;
+}
+/* banner section end */
+/* header section end */
+/* media query */
+@media screen and (max-width: 576px) {
+    .navbar-nav,
+    .banner
+    {
+        width: 420px;
+        justify-content: space-between;
+    }
+    .brand h2{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-content{
+        
+    }
+
+    
+}
