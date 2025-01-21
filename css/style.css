@@ -24,7 +24,7 @@ a{
 } */
 /* nav section start */
 .navbar-nav{
-    width: 1160px;
+    max-width: 1160px;
     margin: 0px auto;
     align-items: center;
 }
@@ -126,7 +126,7 @@ ul .admi{
 /* main section start */
 /* curriculum section start */
 .curriculum{
-    width: 1440px;
+    max-width: 1160px;
     margin: 0px auto;
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
@@ -223,19 +223,19 @@ ul .admi{
 /* curriculum section end */
 /* stories section start */
 .stories{
-    width: 1440px;
+    width: 1160px;
+    background-image: url(../assets/bg.png);
     background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 244, 220, 1));
     margin: 0px auto;
 }
 .stories-title h4{
-    background-image: url(../assets/bg.png);
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
 }
 .stories-card{
     width: 1160px;
-    margin: 0px auto;
+    margin: 50px auto;
 }
 .b-card{
     /* width: 540px; */
@@ -302,15 +302,91 @@ ul .admi{
     margin-top: 10px;
     margin-bottom: 0px;
 }
-.stories button{
-    /* text-align: center;
-    width: 197px;
-    margin: 0px auto; */
+.stories .btn{
     display: block;
-    margin: 0px auto;
+    margin: 20px auto;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 5px 20px;
+    color: white;
+    background: var(--black-color);
+    border-radius: 10px;
 }
 /* stories section end */
 /* main section end */
+
+/* footer section start */
+footer{
+    background: #01ACFD;
+    width: 1160px;
+    margin: 0px auto;
+}
+.footer-wrapper{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 50px 20px 50px 20px;
+}
+.footer-inner{
+    width: 100%;    
+}
+.footer-content p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    padding: 20px;
+}
+.footer-content-img h3{
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+.footer-about{
+    margin-right: 200px;
+}
+.footer-about li a{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    display: block;
+    margin: 15px 0px;
+}
+.footer-link h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.footer-icon-fa{
+    font-size: 1.25rem;
+}
+.footer-icon-fa .fa-facebook{
+    background: #3B5998;
+    padding: 5px;    
+    color: white;
+    border-radius: 3px;
+}
+.footer-icon-fa .fa-google-plus{
+    background: #EA4C89;
+    padding: 5px;    
+    color: white;
+    border-radius: 3px;
+}
+.footer-icon-fa .fa-edge{
+    background: #119BFC;
+    padding: 5px;    
+    color: white;
+    border-radius: 3px;
+}
+.footer-icon-fa .fa-twitter{
+    background: #DD4B39;
+    padding: 5px;    
+    color: white;
+    border-radius: 3px;
+}
+marquee{
+    color: white;
+}
+/* footer section end */
 
 /* media query */
 @media screen and (max-width: 576px) {
@@ -336,16 +412,86 @@ ul .admi{
         text-align: center;
     }
     .curriculum{
-        width: 357px;
+        max-width: 357px;
+    }
+    .cards{
+        max-width: 357px;
     }
     .card-1,
     .card-2,
     .card-3
     {
-        width: 357px;
+        max-width: 340px;
+    }
+    .card-1,
+    .card-2,
+    .card-3
+    {
+        margin-right: 10px;
+        padding: 20px;
+    }
+    .card-1-content button{
+        top: -110px;
     }
     .icon-a{
         display: none;
+    }
+    .b-card{
+        display: none;
+    }
+    .stories{
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255, 244, 220, 1)), url('../assets/bg.png'); /* Combine gradient and image */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .stories-card{
+        width: 100%;
+        margin: 0px auto;
+        justify-content: center;
+    }
+    .s-card{
+        justify-content: center;
+        gap: 5px;
+    }
+    .s-card-1,
+    .s-card-2,
+    .s-card-3,
+    .s-card-4
+    {
+        width: 200px;
+        padding: 10px;
+    }
+    .s-card-1 img,
+    .s-card-2 img,
+    .s-card-3 img,
+    .s-card-4 img{
+        width: 200px;
+    }
+    footer{
+        background: #119BFC;
+        width: 100%;
+    }
+    .footer-wrapper{
+        max-width: 390px;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    .footer-inner{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-link{
+        flex-direction: column;
+    }
+    .footer-about{
+        margin-right: 0px;
+    }
+    .footer-about li a{
+        display: flex;
+        padding: 0px;
     }
 
     
